@@ -1,7 +1,10 @@
+import React from 'react'
 import Link from 'next/link';
 
-export default function Home() {
+const Login = () => {
   return (
     <Link href="/Dashboard">Dashboard</Link>
-  );
+  )
 }
+
+export default Login
