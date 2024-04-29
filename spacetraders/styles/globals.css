@@ -7,8 +7,8 @@
       --background: #06070A;
       --foreground: 222.2 84% 4.9%;
 
-      --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
+      --card: #10131A;
+      --card-foreground: #EAEBF0;
 
       --popover: 0 0% 100%;
       --popover-foreground: 222.2 84% 4.9%;
@@ -72,5 +72,11 @@
     }
     body {
       @apply bg-background;
+    }
+    button {
+      @apply bg-customSecondary rounded-sm;
+    }
+    button:hover {
+      @apply bg-customAccent;
     }
   }
