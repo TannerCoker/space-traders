@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const RegisterForm = ({view}) => {
     const factions = ["COSMIC", "QUANTUM", "GALACTIC", "DOMINION", "ASTRO", "CORSAIRS", "VOID", "OBSIDIAN", "AEGIS", "UNITED"];
+    
     return (
         <form>
             <div className="flex flex-col my-3">
