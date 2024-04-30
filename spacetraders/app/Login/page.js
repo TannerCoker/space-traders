@@ -1,12 +1,15 @@
 'use client'
 
 import React, { useState } from 'react'
+import { useFormState, useFormStatus } from 'react-dom'
+import RegisterForm from '@/components/RegisterForm'
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 
 
 const Login = () => {
     const [displayedCard, setDisplayedCard] = useState();
+    
     
     const switchView = (view) => {
         setDisplayedCard(view);
@@ -17,13 +20,14 @@ const Login = () => {
             case 'login':
                 return (
                     <div className=''>
+                        
                         <button type='button' onClick={() => {switchView('')}}>back</button>
                     </div>
                 )
             case 'register':
                 return (
                     <div className=''>
-                        <button type='button' onClick={() => {switchView('')}}>back</button>
+                        <RegisterForm view={switchView}/>
                     </div>
                 )
             default: 
