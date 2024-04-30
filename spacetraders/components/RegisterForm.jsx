@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const RegisterForm = ({view}) => {
     const factions = ["COSMIC", "QUANTUM", "GALACTIC", "DOMINION", "ASTRO", "CORSAIRS", "VOID", "OBSIDIAN", "AEGIS", "UNITED"];
-    
+
     return (
         <form>
             <div className="flex flex-col my-3">
@@ -17,9 +17,9 @@ const RegisterForm = ({view}) => {
                     })}
                 </select>
             </div>
-            <div>
-                <button type="reset" onClick={() => {view('')}}>Back</button>
-                <button type="submit">Register</button>
+            <div className="flex justify-between">
+                <button className="w-32" type="reset" onClick={() => {view('')}}>Back</button>
+                <button className="w-32" type="submit">Register</button>
             </div>
         </form>
     )
